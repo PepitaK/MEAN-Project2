@@ -1,0 +1,38 @@
+
+<div id="contant">
+  <h1>Remove comment</h1>
+  <form method=post action =/removeuser>
+<select name = username>
+   <% collection.forEach(function(collection) { %>
+<option value = <%= collection.username %>> <%= collection.username %> </option>
+ <% }); %>
+</select>     <input name="" value="Poista" type="submit" />
+</form>
+
+
+  <table border="1">
+    <tr>
+      <th>Id</th>
+      <th>Username</th>
+      <th>Country</th>
+      <th>Date</th>
+      <th>Message</th>
+    </tr>
+
+    <% collection.forEach(function(collection) { %>
+    <tr>
+      <td><%= collection.id %></td>
+      <td><%= collection.username %></td>
+      <td><%= collection.country %></td>
+      <td><%= collection.date %></td>
+      <td><%= collection.message %></td>
+
+    </tr>
+    <% }); %>
+
+</table>
+
+<br>
+<div class="midBox1">
+  <div class="midBox1Top">
+</div>

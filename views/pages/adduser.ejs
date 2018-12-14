@@ -1,0 +1,67 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: 1px solid #313131;
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #EBE8D9;
+    }
+    input[type=submit] {
+    width: 100%;
+    background-color: #EBE8D9;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    size: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+width: 100%;
+background-color: #fff;
+}
+  </style>
+  <% include ../partials/head %>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <% include ../partials/header %>
+    </header>
+
+    <main>
+      <div>
+        <h1>Your comment is added!
+        </h1>
+      </div>
+
+      <br>
+      <form action="/guestbook">
+          <input type="submit" value="Go to Guestbook" />
+      </form>
+
+    </main>
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+  </div>
+</body>
+
+</html>

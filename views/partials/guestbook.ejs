@@ -1,0 +1,30 @@
+
+<div class="midBox2">
+<br><br>
+<h2> Kaikki julkaisut</h2>
+
+<table border="1">
+  <tr>
+    <th>Id</th>
+    <th>Username</th>
+    <th>Country</th>
+    <th>Date</th>
+    <th>Message</th>
+  </tr>
+
+  <% collection.forEach(function(collection) { %>
+  <tr>
+    <td><%= collection.id %></td>
+    <td><%= collection.username %></td>
+    <td><%= collection.country %></td>
+    <td><%= collection.date %></td>
+    <td><%= collection.message %></td>
+
+  </tr>
+  <% }); %>
+
+
+
+</table>
+
+</div>

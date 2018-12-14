@@ -1,0 +1,18 @@
+
+<div id="contant">
+  <h1>Viimeisimmät vitsit!</h1>
+
+
+    <% collection.forEach(function(collection) { %>
+    <div class="feed">
+      <%= collection.message %><br><br>
+<b><%= collection.username %>,</b> <%= collection.country %>
+<br><small>(<%= collection.id %>,  <%= collection.date %>)</small><br>
+
+
+
+    </div>
+    <% }); %>
+
+
+</div>
