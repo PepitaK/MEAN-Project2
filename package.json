@@ -1,6 +1,14 @@
 {
     "name": "node-ejs",
     "main": "server.js",
+    {
+    "engines": {
+  "node": ">= 11.0.0",
+  "npm": ">= 6.5.0",
+},
+
+}
+
     "dependencies": {
         "body-parser": "^1.15.0",
         "ejs": ">=2.5.5",
